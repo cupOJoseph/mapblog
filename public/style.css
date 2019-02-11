@@ -1,0 +1,20 @@
+body { margin:0; padding:0; }
+
+#map{
+  margin: 10%;
+  background-color: #1D1667;
+  height: 90vh;
+  width: 80%;
+}
+
+/*boxes are there to demonstrate scrolling over the map is nice.*/
+.box{
+  height: 100px;
+  padding: 50px;
+  background-color: #548394;
+  color: #fff;
+}
+
+a{
+  color: #C4F3A8;
+}
