@@ -1,31 +1,17 @@
-Welcome to Glitch
-=================
+Using this blog:
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+In the `public/posts.js` add array objects to add more markers. Bottom post is the most recent, and added to the Latest Posts section on the homepage.
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
+Here's a template.
+```
+const posts = [{  \
+  "id":"Hi.there.world", //what 3 words 
+  "date":"1/18/2019",
+  "title":"hello world", //title and date are used for formatting 
+  "lat":"38.955532",     //lat and lon are used to place the marker on the map
+  "lon":"-77.364300",
+  "post":"Here are some words. Today I am starting to work on this blog site. I want to chronical my adventures by where they happen, not when the happen. Blogs of today are chronilogical, which has advantages, but I am experimenting with something else. I think this format will be extra good once I start my long hike.<br><br>Some features I want to support with this are:<ul><li>Markdown editing support</li><li>A 'new post' section</li><li>storing posts in a sqLite db instead of json file</li><li>Auotmatic Backups</li><li>Custom map colors and styling</li><li>Commenting on each post</li></ul>",
+  "img":""
+}]
 
-Find out more [about Glitch](https://glitch.com/about).
-
-
-Your Project
-------------
-
-On the front-end,
-- edit `public/client.js`, `public/style.css` and `views/index.html`
-- drag in `assets`, like images or music, to add them to your project
-
-On the back-end,
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env` (nobody can see this but you and people you invite)
-
-This app has a database!
-- this app uses sqlite but you can power your apps with [a number of other storage options](https://glitch.com/storage)
-- `sqlite.db` is created and put into the `.data` folder, a hidden directory whose contents aren’t copied when a project is remixed. you can see the contents of `.data` in the console under "Logs"
-
-
-Made by [Glitch](https://glitch.com/)
--------------------
-
-\ ゜o゜)ノ
+The `post` part of the object is thrown into HTMl, so it supports adding HTMl code
