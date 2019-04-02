@@ -1,0 +1,81 @@
+ <!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Where's Joseph Been - Blog</title>
+    <meta name="description" content="A blog based on location instead of timing.">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js"></script>
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+   crossorigin=""></script>
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/posts.js" defer></script>
+    <script src="/client.js" defer></script>
+    
+  </head>
+  <body>
+    <div class="box">
+      <div class="words">
+        <h1>
+        Where's Joseph Been?
+      </h1>
+      <p><strong><u>About this</u></strong><br>
+        In April 2019 I'm going into the woods to hike the Appalachian trail from GE to ME. With the goal of self reflection and saving memories, I plan to keep a blog here.
+      </p>
+      <p>
+          <strong><u>Using this blog</u></strong><br>Each marker on the map is a place I visited which I decided was important enough to pin and remember. Click on some markers to see what happened there. If a post is very tall, just drag on the map scroll. The most recent post will be open by default. Other than that, this blog is location based instead of chronologically based.
+      </p>
+      </div>
+    </div>
+
+  <div id="map">
+  </div>
+    
+  <div class="postbox">
+   <div class="words">
+      <h1>
+        <u>Most Recent Post</u>
+      </h1>
+      <div id="recent-content">
+        
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="box">
+    <p>
+      Interested in your own version of this blog? You can clone your own version of it <a href="https://glitch.com/~mapblog">here.</a>
+    </p>
+    <p>
+      Made by Joseph Schiarizzi with ❤ in Reston VA.
+    </p>
+  </div>
+
+  </body>
+</html>

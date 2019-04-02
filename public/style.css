@@ -1,0 +1,38 @@
+body, html { 
+  margin:0; 
+  padding:0; 
+}
+
+
+#map{
+  margin: 10%;
+  background-color: #1D1667;
+  height: 90vh;
+  width: 80%;
+}
+
+/*boxes are there to demonstrate scrolling over the map is nice.*/
+.box{
+  height: 10%;
+ padding: 30px; 
+  background-color: #4A9313;
+  color: #fff;
+}
+
+.words{
+  margin: 25px;
+  height: 100%;
+  margin-bottom: 25px;
+    }
+
+a{
+  color: #C4F3A8;
+}
+
+.postbox{
+  padding-top: 10px;
+  background-color: #F5F5F5;
+  width: 100%;
+  height: 20%;
+  color: #000;
+}
