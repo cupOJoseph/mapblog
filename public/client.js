@@ -50,7 +50,7 @@ var recent_post_section = document.getElementById('recent-content');
 
 const appendNewPost = function(entry) {
   console.log("entry is ", entry);
-  var newpost = '<h2>' + entry.title+ '</h2><p>' + entry.date + ".<b> Location: </b>" + entry.lat + ", " + entry.lon + '  <b>W3W:</b> '+ entry.id + '</p><p>' + entry.post +'</p>';
+  var newpost = '<h2>' + entry.title+ '</h2><p>' + entry.date + ".<b> Location: </b>" + entry.lat + ", " + entry.lon + ' <p>' + entry.post +'</p>';
   recent_post_section.innerHTML = newpost;
 }
 
